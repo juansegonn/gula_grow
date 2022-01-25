@@ -1,0 +1,11 @@
+.carrito__boton{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    background: #638a31;
+    border-radius: 50px;
+    font-size: 25px;
+}
+.fas{
+    color: #222;
+}

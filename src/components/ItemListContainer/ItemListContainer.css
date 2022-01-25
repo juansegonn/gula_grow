@@ -1,0 +1,59 @@
+.repro__container{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.repro__title{
+    color: black;
+    font-size: 1.5rem;
+    margin: 0px 15px;
+}
+
+.repro__about{
+    z-index: 100;
+    align-self: center;
+    width: 70%;
+    height: 75%;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    background: #638a31;
+    grid-column: 1/4;
+    grid-row: 2/-2;
+}
+
+.repro__picture{
+  
+    margin:0;
+    width: 50%;
+    height: 50%;
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+}
+
+.repro__paragraph{
+    font-size: 1.25rem;
+    margin:15px;
+}
+
+.btn__repro {
+    color: #638a31;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #638a31;
+    display: inline-block;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 12px;
+  }
+  
+  .btn__repro:hover {
+    color: white;
+    background: #638a31;
+    border: 2px solid white;
+  }
+  
