@@ -1,0 +1,45 @@
+.contador__container{
+    display: inline;
+    padding: 50px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f78c;
+}
+
+.botones__container{
+    display: flex;
+    border: solid #ededed 1px;
+}
+
+.mas{
+    background-color: #ffffff00; 
+    border: none;
+    color: #638a31;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contador{
+    width: 200px;
+}
+
+.agregar{
+    background-color: #ffffff00; 
+    border: none ;
+    color: #638a31;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.agregar__container{
+    border: solid #638a31 1px;
+}
