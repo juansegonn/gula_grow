@@ -23,7 +23,7 @@ import ItemList from '../ItemList/ItemList';
 
 
     return  (
-        <div className="repro__container">
+        <div className="container">
             { products.length > 0 ? <ItemList products={ products }/> : <p>Cargando...</p>}
             <ItemCount stock={ 5 } initial={ 1 } onAdd={ agregarItems } />
         </div>
@@ -31,4 +31,3 @@ import ItemList from '../ItemList/ItemList';
 }
 
 export default ItemListContainer;
-

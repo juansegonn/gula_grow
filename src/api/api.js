@@ -7,7 +7,7 @@ const products = [
         porcSAT: "50%",
         flowering: "9 weeks",
         precio: 15300,
-        img: "genetica1.png" ,
+        img: "./img/geneticas/genetica1.png" ,
         stock: 100
     },
     {
@@ -18,7 +18,7 @@ const products = [
         porcSAT: "50%",
         flowering: "9 weeks",
         precio: 15300,
-        img: "genetica2.png",
+        img: "./img/geneticas/genetica2.png",
         stock: 100
     },
     {
@@ -29,7 +29,7 @@ const products = [
         porcSAT:"50%" ,
         flowering:"9 weeks",
         precio: 15300,
-        img: "genetica3.png",
+        img: "./img/geneticas/genetica3.png",
         stock: 100
     },
     {
@@ -40,7 +40,7 @@ const products = [
         porcSAT:  "40%",
         flowering: "9 a 10 weeks",
         precio: 11900,
-        img: "genetica4.png",
+        img: "./img/geneticas/genetica4.png",
         stock: 100
     },
     {
@@ -51,7 +51,7 @@ const products = [
         porcSAT: "40%",
         flowering:"9 weeks",
         precio:9350,
-        img: "genetica5.png",
+        img: "./img/geneticas/genetica5.png",
         stock: 100
     },
     {
@@ -62,7 +62,7 @@ const products = [
         porcSAT:"40%" ,
         flowering: "8 weeks",
         precio:9350,
-        img: "genetica6.png",
+        img: "./img/geneticas/genetica6.png",
         stock: 100
     },
     {
@@ -73,7 +73,7 @@ const products = [
         porcSAT: "40%",
         flowering: "8 weeks",
         precio: 9350,
-        img: "genetica7.png",
+        img: "./img/geneticas/genetica7.png",
         stock: 100
     },
     {
@@ -84,7 +84,7 @@ const products = [
         porcSAT: "30%",
         flowering: "8 weeks",
         precio: 9350,
-        img: "genetica8.png",
+        img: "./img/geneticas/genetica8.png",
         stock: 100
     },
     {
@@ -95,7 +95,7 @@ const products = [
         porcSAT:  "60%",
         flowering: "8 a 9 weeks",
         precio: 15300,
-        img: "genetica9.png",
+        img: "./img/geneticas/genetica9.png",
         stock: 100
     },
     {
@@ -106,7 +106,7 @@ const products = [
         porcSAT: "50%",
         flowering: "8 a 9 weeks",
         precio: 15300,
-        img: "genetica10.png",
+        img: "./img/geneticas/genetica10.png",
         stock: 100
     },
     {
@@ -117,7 +117,7 @@ const products = [
         porcSAT:  "80%",
         flowering: "9 weeks",
         precio: 15300,
-        img: "genetica11.png",
+        img: "./img/geneticas/genetica11.png",
         stock: 100
     },
     {
@@ -128,7 +128,7 @@ const products = [
         porcSAT: "50%",
         flowering: "8 weeks",
         precio: 11900,
-        img: "genetica12.png",
+        img: "./img/geneticas/genetica12.png",
         stock: 100
     },
     {
@@ -139,7 +139,7 @@ const products = [
         porcSAT: "60%",
         flowering: "9 weeks",
         precio: 9350,
-        img: "genetica13.png",
+        img: "./img/geneticas/genetica13.png",
         stock: 100
     }
 ]
