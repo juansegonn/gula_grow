@@ -1,10 +1,10 @@
 import './ItemList.css';
-import Item from '../Item/Item'
+import Item from '../Item/Item';
 
 
 function ItemList({ products }) {
     return (
-        <div>
+        <div className="container">
             {
                 products.map (function(producto) {
                     return (
