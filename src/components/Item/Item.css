@@ -1,10 +1,4 @@
-.container{
-    display: flex;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .imagen{
     width: 300px;
