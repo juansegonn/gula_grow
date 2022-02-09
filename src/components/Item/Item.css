@@ -1,17 +1,17 @@
-
+.container{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
 
 .imagen{
     width: 300px;
     height: 200px;
 }
-.container__top{
-    display: flex;
-}
 
 .seeds{
     background-color: black;
     color: white;
-    width: 150px;
 }
 
 .fa-venus{
@@ -21,14 +21,9 @@
 .price{
     background-color: rgb(233, 127, 6);
     color: white;
-    display: flex;
-    width: 150px;
-    height: 50px;
 }
 
 .nombre{
-    width: 300px;
     background-color: black;
     color: white;
-    height: 50px;
 }

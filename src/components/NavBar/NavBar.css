@@ -40,6 +40,12 @@ header{
     padding: 10px 15px;
     display: block;
 }
+
+li a.active{
+    font-weight: bold;
+    color: #638a31;
+}
+
 .nav-menu a:visited{
     color: honeydew;
 }
@@ -54,3 +60,4 @@ header{
 .nav-menu li:hover > ul{
     display:block ;
 }
+

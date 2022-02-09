@@ -1,10 +1,10 @@
 import './ItemDetail.css';
 
-function ItemDetail ({ producto }) {
+function ItemDetail ({ producto}) {
     return (
         <div className="container">
             <img src= { producto.img }/>
-            <p>Genetica { producto.nombre }</p>
+            <p>Genetica: { producto.nombre }</p>
             <p>Cantidad de THC: { producto.porcTHC }</p>
             <p>Tiempo de flowering: { producto.flowering }</p>
             <p>Indica: { producto.porcIND }</p>
