@@ -5,10 +5,14 @@ function Item ({ item }) {
     return(
         <div className='container'> 
             <Link to={ `/producto/${item.id}` }>
-                <p className='seeds'>x 3 seeds <i className="fas fa-venus"></i></p>
-                <p className='price'>{ item.precio }</p>
-                <p className='nombre'>{ item.nombre }</p>
-                <img className='imagen' src={ item.img } alt="imagen del producto"/>
+                <div className='container__top'>
+                    <p className='seeds'>x 3 seeds <i className="fas fa-venus"></i></p>
+                    <p className='price'>${ item.precio }</p>
+                </div> 
+                <div className='container__bot'>
+                    <p className='nombre'>{ item.nombre }</p>   
+                    <img className='imagen' src={ item.img } alt="imagen del producto"/>
+                </div>
             </Link>
         </div>
     )

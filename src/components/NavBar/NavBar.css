@@ -6,13 +6,11 @@
     font-family: 'roboto', sans-serif
 }
 
-.enlace{
-    color: black;
-}
 body{
     background: rgb(161,227,76);
     background: linear-gradient(90deg, rgba(161,227,76,0.7035014689469538) 0%, rgba(78,110,38,0.6978992280505952) 100%);
 }
+
 .logo-header img{
     width: 150px;
     margin-left: 150px;
@@ -38,7 +36,6 @@ header{
     background-color: #222;
     color: honeydew;
     padding: 10px 15px;
-    display: block;
 }
 
 li a.active{
@@ -46,18 +43,7 @@ li a.active{
     color: #638a31;
 }
 
-.nav-menu a:visited{
-    color: honeydew;
-}
 .nav-menu a:hover{
     color: #638a31;
-}
-.nav-menu li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-.nav-menu li:hover > ul{
-    display:block ;
 }
 
