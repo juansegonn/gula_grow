@@ -1,45 +1,25 @@
-.contador__container{
-    display: inline;
-    padding: 50px;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    background-color: #f7f7f78c;
-}
-
-.botones__container{
+.quatity{
     display: flex;
-    border: solid #ededed 1px;
+    justify-content: center;
 }
 
-.mas{
-    background-color: #ffffff00; 
-    border: none;
-    color: #638a31;
-    padding: 5px;
+.quatity button{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 0;
+    background: #fff;
+}
+
+.quatity p{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.contador{
-    width: 200px;
-}
-
-.agregar{
-    background-color: #ffffff00; 
-    border: none ;
-    color: #638a31;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.agregar__container{
-    border: solid #638a31 1px;
+    width: 100px;
+    height: 45px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    font-weight: 300;
 }
