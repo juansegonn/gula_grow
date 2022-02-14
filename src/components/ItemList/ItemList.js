@@ -2,7 +2,7 @@ import './ItemList.css';
 import Item from '../Item/Item';
 
 
-function ItemList({ products }) {
+function ItemList ({ products }) {
     return (
         <div className="container">
             {
@@ -16,4 +16,4 @@ function ItemList({ products }) {
     )
 }
 
-export default ItemList;
+export default ItemList;  

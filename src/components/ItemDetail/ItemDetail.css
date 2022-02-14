@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 30px 0;
+    padding: 40px 0;
     max-width: 1200px;
     width: 100%;
     margin: 100px auto;
@@ -16,7 +16,7 @@
 .details .big-img{
     max-width: 500px;
     min-width: 290px;
-    overflow: hidden;
+    width: 50%;
     margin: 5px;
 }
 
@@ -25,16 +25,15 @@
     height: 100%;
     max-height: 400px;
     display: block;
-    object-fit: cover;
 }
 
 .details .box{
-    max-width: 500px;
+    max-width: 700px;
     min-width: 290px;
-    margin: 5px;
+    width: 50%;
 }
 
-.boc .row{
+.box .row{
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -43,20 +42,34 @@
 .box .row h2{
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: xx-large;
 }
 
 .box .row span{
     color: #e97f06;
+    font-size: xx-large;
 }
 
-.box__bot{
+.box__top{
     width: 250px;
     height: 10px;
-    outline: none;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
     margin-right: 5px;
 }
 
 .box p{
     line-height: 1.5;
     margin: 15px 0;
+}
+
+.box__bot{
+    width: 250px;
+    height: 0px;
+    font-size: large;
+    display: flex;
+    margin-bottom: 30px;
+    margin-right: 5px;
 }
