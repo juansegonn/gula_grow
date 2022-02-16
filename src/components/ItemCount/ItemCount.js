@@ -29,7 +29,7 @@ const [contador, setContador] = useState(initial);
                 <button className="btn btn__restar" type="button" onClick={ sumar }>+</button>
            </div>
            <div  className="agregar__container">
-               <button className="btn__agregar" onClick={ () => onAdd(contador) }>agregar al carrito</button>   
+               <button className="btn__agregar" onClick={ agregarItems }>agregar al carrito</button>   
             </div> 
         </div>
     )
