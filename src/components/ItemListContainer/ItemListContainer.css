@@ -1,6 +1,7 @@
-.container{
+.home{
     align-items: center;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-gap: 1rem;
+    grid-gap: 0.5rem;
+    margin-left: 15px;
 }

@@ -25,7 +25,7 @@
 }
 
 .price{
-    background-color: #e97f06;
+    background-color: #638a31;
     color: white;
     width: 150px;
     height: 40px;
@@ -46,7 +46,7 @@
     justify-content: center;
 }
 .container__top{
-        align-items: center;
-        display: grid;
-        grid-template-columns: auto auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
 }

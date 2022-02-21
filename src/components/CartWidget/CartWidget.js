@@ -1,9 +1,11 @@
 import react from "react";
 import "./CartWidget.css"; 
+import { Link } from "react-router-dom"; 
+
 
 export default function CartWidget() {
     return (
-        <a href="#" id="carrito__boton" className="carrito__boton">
+        <Link to="/Cart" id="carrito__boton" className="carrito__boton">
             <i className="fas fa-shopping-cart"></i>
-        </a>
+        </Link>
 )}

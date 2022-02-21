@@ -28,7 +28,7 @@ import { useParams } from "react-router-dom";
 
 
     return  (
-        <div className="container">
+        <div className="home">
             { products.length === 0 ? <p>Cargando...</p> : <ItemList products={ products }/> }
         </div>
     )

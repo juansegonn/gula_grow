@@ -1,0 +1,51 @@
+.botones__container{
+    display: flex;
+    width: auto;
+    height: 40px;
+    border: solid white 1px;
+    background-color: #0c0b0b8f;
+    margin-top: 50px;
+}
+
+.botonera{
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+}
+
+.btn{
+    width: 48px;
+    height: 40px;
+    background-color: #0c0b0b8f;
+    color: white;
+    border: none;
+    cursor:pointer; 
+}
+
+.container__contador{
+    background-color: #0c0b0b8f;
+    width: 100px;
+    height: 30px;
+}
+
+.contador{
+    justify-content: center;
+    background-color: #0c0b0b8f;
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.agregar__container{
+    height: 40px;
+    width: 200px;
+}
+
+.btn__agregar{
+    height: 40px;
+    width: 200px;
+    background-color: #0c0b0b8f;
+    color: white;
+    border: solid white 1px;
+    cursor:pointer; 
+}

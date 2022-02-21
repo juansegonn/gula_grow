@@ -1,3 +1,7 @@
-.container{
-
+.list{
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 0.5rem;
+    margin: 15px;
 }
