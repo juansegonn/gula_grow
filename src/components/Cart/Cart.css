@@ -1,0 +1,24 @@
+.cart__container{
+    display: block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto;
+    box-shadow: 0 0 5px rgb(82, 82, 82);
+    background-color: #222;
+    color: white;
+}
+
+.img__productos{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.cart__productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
