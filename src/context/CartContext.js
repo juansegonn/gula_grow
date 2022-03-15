@@ -12,7 +12,6 @@ const CartContextProvider = ({ children }) =>{
             setCart([...cart, {...producto, cantidad}])
         }
     }
-    console.log(cart)
     
     //revisar si esta en el carrito
     const isOnCart = (id) => {
@@ -42,12 +41,18 @@ const CartContextProvider = ({ children }) =>{
 
     //suma de total
     const total = () => {
-        const sumaTotal = cart.reduce((x, y) => x + y.precio * y.cantidad, 0);
-        return sumaTotal;
+        const sumaTotal = cart.reduce((x, y) => x + y.precio * y.cantidad, 0)
+        return sumaTotal
+      }
+
+    const unidades = () => {
+        const numeros = cart.reduce((x, y) => x + y.cantidad, 0);
+        return numeros;
       };
+      
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, vaciarCarrito, deleteItem, total }}>
+        <CartContext.Provider value={{ cart, addToCart, vaciarCarrito, deleteItem, total, unidades }}>
             { children } 
          </CartContext.Provider> 
     )

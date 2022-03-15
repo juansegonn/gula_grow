@@ -11,7 +11,6 @@ function getProducts() {
         .then(snapshot => {
             const products = snapshot.docs.map( (doc) => ( { id: doc.id, ...doc.data() }))
             resolve(products)
-            console.log(products)
         })
         .catch(error => {
             console.log(error)

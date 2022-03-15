@@ -12,7 +12,8 @@
 }
 
 .img__productos{
-    width: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 
@@ -22,3 +23,30 @@
     align-items: center;
     margin: 25px;
 }
+
+.cart__data{
+    display: flex;
+}
+
+.cart__name{
+    margin-right: 25px;
+    margin-left: -1000px;
+}
+
+.cart__price{
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+.cart__x{
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+    background-color: #0c0b0b8f;
+    border: solid white 1px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+

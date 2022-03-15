@@ -2,98 +2,85 @@ import { useContext, useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../../firebase";
 import { CartContext } from "../../context/CartContext";
+import { Link } from 'react-router-dom';
+import './CheckOut.css'
 
 const CheckOut = () => {
-  const { cart, vaciarCarrito, sumarCantidad } = useContext(CartContext);
-  const [formValues, setFormValues] = useState({});
-  const [orderId, setOrderId] = useState("");
-  const handleInputChange = (e) => {
-    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+  const { cart, vaciarCarrito, total } = useContext(CartContext)
+  const [email, setEmail] = useState("")
+  const [emailConfirm, setEmailConfirme] = useState("")
+  const [name, setName] = useState("")
+  const [orderId, setOrderId] = useState("")
+  const [loading, setLoading] = useState(false)
+  
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+    const newOrder = {
+        date: new Date(),
+        buyer: { email, name },
+        items: cart,
+        total: total(),
   };
-  const ordersCollection = collection(db, "orders");
-  const newOrder = {
-    buyer: {
-      name: formValues.name,
-      lastName: formValues.lastName,
-      phone: formValues.phone,
-      email: formValues.email,
-    },
-    items: cart,
-    total: sumarCantidad(),
+  addDoc(collection(db, 'orders'), newOrder)
+        .then((res) => {
+          setOrderId(res.id)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+        .finally(() => {
+          setLoading(false)
+          vaciarCarrito()
+        })
   };
-  const checkOut = (event) => {
-    event.preventDefault();
-    if (sumarCantidad() === 0) {
-      alert("El carrito está vacío, agregá algo y volvé al carrito");
-    } else {
-      if (formValues.email === formValues.emailConfirm) {
-        addDoc(ordersCollection, newOrder)
-          .then((doc) => setOrderId(doc.id))
-          .catch((error) => {
-            console.log(error);
-          });
-          vaciarCarrito();
-      } else {
-        alert("Los e-mail no coinciden");
-      }
-    }
-  };
+
+  if (orderId !== '') {
+    return <h2> El Id de tu compra es: { orderId }</h2>
+  }
   return (
     <>
-      {orderId !== "" ? (
-        <div className="col-md-3 summary">
-          <h5>Compra realizada correctamente</h5>
-          <hr/>
-        <h2>El ID de tu compra es: {orderId}</h2>
-        </div>
-      ) : (
-        <div className="col-md-3 summary">
-          <h5>Resumen</h5>
-          <hr />
-          <form onSubmit={checkOut} className="data">
+     {cart.length === 0 ? (
+                <>
+                    <h2>Carrito Vacio</h2>
+                    <Link to="/">{'<<'}volver al inicio </Link>
+                </>
+            ) : (
+        <div className="formulario__container">
+          <form onSubmit={handleSubmit} className="data">
             <p>Nombre</p>
             <input
-              onChange={handleInputChange}
-              name="name"
+              onChange={ (e) => setName(e.target.value)}
+              name={name}
               type="text"
+              placeholder="Nombre"
               required
             />
-            <p>Apellido</p>
+            <p>Email</p>
             <input
-              onChange={handleInputChange}
-              name="lastName"
-              type="text"
-              required
-            />
-            <p>Correo</p>
-            <input
-              onChange={handleInputChange}
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
               name="email"
               type="email"
+              placeholder="Email"
               required
             />
-            <p>Correo(confirmar)</p>
+            <p>Email(confirmar)</p>
             <input
-              onChange={handleInputChange}
+              onChange={(e) => setEmailConfirme(e.target.value)}
               name="emailConfirm"
               type="email"
+              placeholder="Confirmar Email"
               required
             />
-            <p>Teléfono</p>
-            <input
-              onChange={handleInputChange}
-              name="phone"
-              type="tel"
-              required
-            />
-            <button className="btn" onSubmit={checkOut}>
-              CHECKOUT
+            <button className="" disabled={email !== emailConfirm} >
+              {loading ? 'Generando orden...' : 'Finalizar compra'}
             </button>
           </form>
-          <hr />
           <div className="rows">
+            <button onClick={ vaciarCarrito }> Vaciar carrito</button>
             <div className="col">Precio total</div>
-            <div className="col text-right">${sumarCantidad()}</div>
+            <div className="col text-right">${total()}</div>
           </div>
         </div>
       )}
