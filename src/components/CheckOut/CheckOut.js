@@ -48,16 +48,14 @@ const CheckOut = () => {
             ) : (
         <div className="formulario__container">
           <form onSubmit={handleSubmit} className="data">
-            <p>Nombre</p>
-            <input
+            <input className="imput"
               onChange={ (e) => setName(e.target.value)}
               name={name}
               type="text"
               placeholder="Nombre"
               required
             />
-            <p>Email</p>
-            <input
+            <input className="imput"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               name="email"
@@ -65,22 +63,20 @@ const CheckOut = () => {
               placeholder="Email"
               required
             />
-            <p>Email(confirmar)</p>
-            <input
+            <input className="imput"
               onChange={(e) => setEmailConfirme(e.target.value)}
               name="emailConfirm"
               type="email"
               placeholder="Confirmar Email"
               required
             />
-            <button className="" disabled={email !== emailConfirm} >
+            <button className="btn__checkout" disabled={email !== emailConfirm} >
               {loading ? 'Generando orden...' : 'Finalizar compra'}
             </button>
           </form>
           <div className="rows">
-            <button onClick={ vaciarCarrito }> Vaciar carrito</button>
-            <div className="col">Precio total</div>
-            <div className="col text-right">${total()}</div>
+            <button className="btn__checkout" onClick={ vaciarCarrito }> Vaciar carrito</button>
+            <div className="price__text"> Precio total: ${total()}</div>
           </div>
         </div>
       )}

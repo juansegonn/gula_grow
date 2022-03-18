@@ -1,5 +1,31 @@
 .formulario__container{
-    background-color: aquamarine;
     width: 200px;
+    margin-left: 700px;
+    margin-top: -170px;
+    position: absolute;
 
+}
+
+.imput{
+    margin: 5px;
+    width: 250px;
+    height: 20px;
+}
+
+.btn__checkout{
+    height: 35px;
+    width: 250px;
+    margin-left: 7px;
+    background-color: #0c0b0b8f;
+    color: white;
+    border: solid white 1px;
+    cursor:pointer; 
+}
+
+.price__text{
+    margin-top: 7px;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
 }

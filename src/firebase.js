@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCAJgEcKKsoSdbA1ACw_wZUfiL3TSXGcyA",
-  authDomain: "gulagrow.firebaseapp.com",
-  projectId: "gulagrow",
-  storageBucket: "gulagrow.appspot.com",
-  messagingSenderId: "333790262511",
-  appId: "1:333790262511:web:059ea2d5fa40dada35d71a"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_API_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_API_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_API_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_API_SENDER_ID,
+  appId: process.env.REACT_APP_API_APP_ID
 };
 
 // Initialize Firebase
